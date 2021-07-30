@@ -1,3 +1,10 @@
+pt-ui-mods (1.4.20210708) buster; urgency=medium
+
+  [ pre-commit-ci[bot] ]
+  * [pre-commit.ci] pre-commit autoupdate (#59)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 30 Jul 2021 13:41:51 +0000
+
 pt-ui-mods (1.4.20210707) buster; urgency=medium
 
   * raspberrypi-sys-mods now handles allowing plugdev group to mount disks
