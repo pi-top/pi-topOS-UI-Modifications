@@ -30,7 +30,6 @@ Depends:
  lxpanel,
  lxsession,
  openbox,
- papirus-folders,
  pt-notifications,
  pt-icon-theme,
  pcmanfm,
