@@ -86,8 +86,6 @@ case "${1}" in
         echo "Updating profile for ${USER}..."
 
         if is_first_install $@; then
-          papirus-folders -C bluegrey --theme Papirus-Dark
-
           if [ ! -d /root/.config/lxterminal ]; then
             mkdir -p /root/.config/lxterminal
           fi
