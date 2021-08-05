@@ -24,7 +24,6 @@ Depends:
  adapta-gtk-theme,
  breeze-cursor-theme,
  desktop-file-utils,
- fonts-fs-me-pro,
  libglib2.0-bin,
  lightdm,
  lxpanel,
