@@ -5,14 +5,14 @@ _show_messagebox() {
   local body="$2"
 
   pt-notify-send \
-  --expire-time 10000 \
-  --icon "dialog-information" \
-  "${title}" \
-  "${body}"
+    --expire-time 10000 \
+    --icon "dialog-information" \
+    "${title}" \
+    "${body}"
 }
 
 _desktop_is_available() {
-  if pgrep -x Xorg > /dev/null; then
+  if pgrep -x Xorg >/dev/null; then
     return 0
   else
     return 1
@@ -53,69 +53,68 @@ add_custom_openbox_configuration() {
 }
 
 case "${1}" in
-  configure)
+configure)
 
-    min_version_w_autorandr_dependency="1.0.20200423"
+  min_version_w_autorandr_dependency="1.0.20200423"
 
-    # If upgrading from pre-'1.0.20200423', patch autorandr autostart file
-    # to match what pt-ui-mods used to provide
-    if is_first_install $@ || dpkg --compare-versions "$2" lt "${min_version_w_autorandr_dependency}"; then
-      sed -i "s|/usr/bin/autorandr -c --default default|/usr/bin/autorandr -c --default common|1" /etc/xdg/autostart/autorandr.desktop
-    fi
+  # If upgrading from pre-'1.0.20200423', patch autorandr autostart file
+  # to match what pt-ui-mods used to provide
+  if is_first_install $@ || dpkg --compare-versions "$2" lt "${min_version_w_autorandr_dependency}"; then
+    sed -i "s|/usr/bin/autorandr -c --default default|/usr/bin/autorandr -c --default common|1" /etc/xdg/autostart/autorandr.desktop
+  fi
 
-    update-desktop-database /usr/share/pt-ui-overrides/applications/
-    update-alternatives --install /usr/bin/x-session-manager \
-      x-session-manager /usr/bin/startlxde-pt 90 \
-      --slave /usr/share/man/man1/x-session-manager.1.gz \
-      x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
-    # CHANGED=False
-    pwdlines=$(getent passwd)
-    while read line
-    do
-      USHELL=$(echo "$line" | cut -d: -f7)
-      if grep -q "$USHELL" /etc/shells ; then
-        USER=$(echo "$line" | cut -d: -f1)
-        LOGNAME=$USER
-        SUDO_USER=$USER
-        GROUP=$(getent group "$(getent passwd "$USER" | cut -d: -f4)" | cut -d: -f1)
-        OWNER=${USER}:${GROUP}
-        HOME_DIR=$(echo "$line" | cut -d: -f6)
-        CONF_DIR=${HOME_DIR}/.config
-        THEME_DIR=${HOME_DIR}/.themes
+  update-desktop-database /usr/share/pt-ui-overrides/applications/
+  update-alternatives --install /usr/bin/x-session-manager \
+    x-session-manager /usr/bin/startlxde-pt 90 \
+    --slave /usr/share/man/man1/x-session-manager.1.gz \
+    x-session-manager.1.gz /usr/share/man/man1/startlxde.1.gz
+  # CHANGED=False
+  pwdlines=$(getent passwd)
+  while read line; do
+    USHELL=$(echo "$line" | cut -d: -f7)
+    if grep -q "$USHELL" /etc/shells; then
+      USER=$(echo "$line" | cut -d: -f1)
+      LOGNAME=$USER
+      SUDO_USER=$USER
+      GROUP=$(getent group "$(getent passwd "$USER" | cut -d: -f4)" | cut -d: -f1)
+      OWNER=${USER}:${GROUP}
+      HOME_DIR=$(echo "$line" | cut -d: -f6)
+      CONF_DIR=${HOME_DIR}/.config
+      THEME_DIR=${HOME_DIR}/.themes
 
-        echo "Updating profile for ${USER}..."
+      echo "Updating profile for ${USER}..."
 
-        if is_first_install $@; then
-          if [ ! -d /root/.config/lxterminal ]; then
-            mkdir -p /root/.config/lxterminal
-          fi
-          cp /usr/share/pt-ui-overrides/lxterminal.conf /root/.config/lxterminal/
-
-          add_custom_openbox_configuration
-
-        elif dpkg --compare-versions "${2}" lt "1.0.20201111"; then
-          if [ -z "$(getent group lpadmin)" ] ; then
-            addgroup --system lpadmin
-          fi
-          adduser "$USER" lpadmin
+      if is_first_install $@; then
+        if [ ! -d /root/.config/lxterminal ]; then
+          mkdir -p /root/.config/lxterminal
         fi
+        cp /usr/share/pt-ui-overrides/lxterminal.conf /root/.config/lxterminal/
+
+        add_custom_openbox_configuration
+
+      elif dpkg --compare-versions "${2}" lt "1.0.20201111"; then
+        if [ -z "$(getent group lpadmin)" ]; then
+          addgroup --system lpadmin
+        fi
+        adduser "$USER" lpadmin
       fi
-    done <<EOF
+    fi
+  done <<EOF
     $pwdlines
 EOF
-    if ! is_first_install $@; then
-      notify_user_of_update
-    fi
-    ;;
+  if ! is_first_install $@; then
+    notify_user_of_update
+  fi
+  ;;
 
-  abort-upgrade|abort-remove|abort-deconfigure)
+abort-upgrade | abort-remove | abort-deconfigure) ;;
 
-    ;;
-
+\
+  \
   *)
-    echo "postinst called with unknown argument \`${1}'" >&2
-    exit 1
-    ;;
+  echo "postinst called with unknown argument \`${1}'" >&2
+  exit 1
+  ;;
 esac
 
 #DEBHELPER#
