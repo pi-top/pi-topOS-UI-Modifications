@@ -85,11 +85,6 @@ configure)
       echo "Updating profile for ${USER}..."
 
       if is_first_install $@; then
-        if [ ! -d /root/.config/lxterminal ]; then
-          mkdir -p /root/.config/lxterminal
-        fi
-        cp /usr/share/pt-ui-overrides/lxterminal.conf /root/.config/lxterminal/
-
         add_custom_openbox_configuration
 
       elif dpkg --compare-versions "${2}" lt "1.0.20201111"; then
