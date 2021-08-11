@@ -287,7 +287,7 @@
     <!-- Launch shutdown helper with Ctrl+Alt+Del -->
     <keybind key="C-A-Delete">
       <action name="Execute">
-        <command>lxde-pt-shutdown-helper</command>
+        <command>lxde-pt-os-quit-options</command>
       </action>
     </keybind>
     <!-- Launch screen reader installer with Ctrl+Alt+Space -->
