@@ -29,7 +29,7 @@ Depends:
  lxpanel,
  lxsession,
  openbox,
- pt-notifications,
+ pt-os-notifications,
  pt-os-icon-theme,
  pcmanfm,
  policykit-1,
