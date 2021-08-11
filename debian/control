@@ -30,7 +30,7 @@ Depends:
  lxsession,
  openbox,
  pt-notifications,
- pt-icon-theme,
+ pt-os-icon-theme,
  pcmanfm,
  policykit-1,
 # Used by pt-further
