@@ -1,4 +1,4 @@
-Source: pt-ui-mods
+Source: pt-os-ui-mods
 Section: x11
 Priority: optional
 Maintainer: pi-top <deb-maintainers@pi-top.com>
@@ -7,7 +7,7 @@ Build-Depends:
  dh-sequence-python3,
 Standards-Version: 4.5.1
 
-Package: pt-ui-mods
+Package: pt-os-ui-mods
 Architecture: all
 Replaces:
  raspberrypi-ui-mods,

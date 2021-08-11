@@ -1,6 +1,4 @@
-pt-ui-mods: no-manual-page usr/bin/openbox-lxde-pt
-pt-ui-mods: no-manual-page usr/bin/pt-further
-pt-ui-mods: no-manual-page usr/bin/pt-scrot
-pt-ui-mods: no-manual-page usr/bin/startlxde-pt
-# False positive: Command with path is part of a search and replace operation
-pt-ui-mods: command-with-path-in-maintainer-script
+pt-os-ui-mods: no-manual-page usr/bin/openbox-lxde-pt
+pt-os-ui-mods: no-manual-page usr/bin/pt-further
+pt-os-ui-mods: no-manual-page usr/bin/pt-scrot
+pt-os-ui-mods: no-manual-page usr/bin/startlxde-pt
