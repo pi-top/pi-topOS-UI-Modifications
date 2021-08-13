@@ -9,8 +9,6 @@ Standards-Version: 4.5.1
 
 Package: pt-os-ui-mods
 Architecture: all
-Replaces:
- raspberrypi-ui-mods,
 Breaks:
  raspberrypi-ui-mods,
 Conflicts:
