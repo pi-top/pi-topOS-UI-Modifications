@@ -20,6 +20,7 @@ Depends:
  adapta-gtk-theme,
  breeze-cursor-theme,
  desktop-file-utils,
+ fonts-piboto,
  libglib2.0-bin,
  lightdm,
  lxpanel,
