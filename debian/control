@@ -66,6 +66,8 @@ Recommends:
  scrot,
  system-config-printer,
  xserver-xorg-video-fbturbo,
+Replaces:
+ autorandr,
 Description: pi-topOS LXDE UI Customisations
  Customised theme and configuration for LXDE desktop on Raspberry Pi. Inherited
  from raspberrypi-ui-mods, this package uses 'LXDE-pt' instead of 'LXDE-pi'
