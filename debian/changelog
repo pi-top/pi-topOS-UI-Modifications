@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.5.20210811) bullseye; urgency=medium
+
+  * Rename package
+
+ -- pi-top <deb-maintainers@pi-top.com>  Wed, 11 Aug 2021 12:23:24 +0000
+
 pt-ui-mods (1.4.20210707) buster; urgency=medium
 
   * raspberrypi-sys-mods now handles allowing plugdev group to mount disks
