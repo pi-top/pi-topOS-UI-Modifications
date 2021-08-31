@@ -17,7 +17,7 @@ repos:
       args: [-x]
 
 -   repo: git://github.com/pecigonzalo/pre-commit-shfmt
-    sha: master
+    rev: 23bcc6bbfd38358ca99fb1787af2f8202b9dd46a
     hooks:
     -  id: shell-fmt
        args: ["--indent=4"]
