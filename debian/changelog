@@ -1,3 +1,17 @@
+pt-os-ui-mods (1.5.20210812) bullseye; urgency=medium
+
+  * [pre-commit.ci] pre-commit autoupdate (#59)
+  * New workflows (#60)
+  * Update master workflow files
+  * Update master workflow files
+  * Bullseye release (#65)
+  * Updated master workflow files
+  * [pre-commit.ci] pre-commit autoupdate (#66)
+  * Depend on notify-send-ng; use notify-send command
+  * Updated master workflow files
+
+ -- pi-top <deb-maintainers@pi-top.com>  Wed, 01 Sep 2021 20:47:39 +0000
+
 pt-os-ui-mods (1.5.20210811) bullseye; urgency=medium
 
   * Rename package
