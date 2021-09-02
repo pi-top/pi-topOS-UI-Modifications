@@ -1,4 +1,4 @@
-pt-os-ui-mods (1.5.20210812) bullseye; urgency=medium
+pt-os-ui-mods (1.5.20210812-1) bullseye; urgency=medium
 
   * Bullseye release (#65)
   * Depend on notify-send-ng; use notify-send command
