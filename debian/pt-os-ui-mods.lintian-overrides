@@ -1,4 +1,3 @@
 pt-os-ui-mods: no-manual-page usr/bin/openbox-lxde-pt
-pt-os-ui-mods: no-manual-page usr/bin/pt-further
 pt-os-ui-mods: no-manual-page usr/bin/pt-scrot
 pt-os-ui-mods: no-manual-page usr/bin/startlxde-pt
