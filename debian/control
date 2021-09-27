@@ -23,6 +23,8 @@ Depends:
  breeze-cursor-theme,
  desktop-file-utils,
  fonts-piboto,
+# Further desktop file's 'start-further' command
+ further-link,
  libglib2.0-bin,
  lightdm,
  lxpanel,
@@ -32,8 +34,6 @@ Depends:
  pt-os-icon-theme,
  pcmanfm,
  policykit-1,
-# Used by pt-further
- python3-pitop,
 # Required for .desktop file
  python3-pitop-doc,
  python3-notify2,
