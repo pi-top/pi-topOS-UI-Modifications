@@ -1,7 +1,5 @@
-pt-os-ui-mods (1.5.20210812-2) bullseye; urgency=medium
+pt-os-ui-mods (1.5.20210927-1) bullseye; urgency=medium
 
-  * Updated master workflow files
-  * Updated master workflow files
   * Use further-link for browser-opening command (#68)
 
  -- pi-top <deb-maintainers@pi-top.com>  Mon, 27 Sep 2021 14:30:42 +0000
