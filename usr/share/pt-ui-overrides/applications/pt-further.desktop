@@ -5,6 +5,6 @@ Name=pi-top Further
 Comment=Social learning platform for makers
 TryExec=/usr/bin/x-www-browser
 Exec=start-further
-Icon=start-further
+Icon=pt-further
 Terminal=false
 Categories=Education;
