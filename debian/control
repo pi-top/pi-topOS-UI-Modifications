@@ -60,7 +60,6 @@ Recommends:
  onboard,
  pi-greeter,
  pi-printer-support,
- pimixer,
  pt-os-quit-options,
  raspi2png,
  rc-gui (>=1.18),
