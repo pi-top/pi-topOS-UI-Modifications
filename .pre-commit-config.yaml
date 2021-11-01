@@ -9,6 +9,8 @@ repos:
     - id: check-yaml
     - id: check-added-large-files
     - id: check-symlinks
+      # Broken symlink is needed for default autorandr behaviour
+      exclude: ^etc/xdg/autorandr/default
 
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.7.2.1
