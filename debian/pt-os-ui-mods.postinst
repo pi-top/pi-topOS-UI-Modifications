@@ -43,7 +43,7 @@ is_first_install() {
 
 case "${1}" in
 configure)
-  update-desktop-database /usr/share/pt-ui-overrides/applications/
+  update-desktop-database /usr/share/pt-os-ui-overrides/applications/
   update-alternatives --install /usr/bin/x-session-manager \
     x-session-manager /usr/bin/startlxde-pt 90 \
     --slave /usr/share/man/man1/x-session-manager.1.gz \
