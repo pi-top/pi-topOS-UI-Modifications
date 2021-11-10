@@ -1,3 +1,15 @@
+pt-os-ui-mods (1.5.20210927-2) bullseye; urgency=medium
+
+  * Updated master workflow files
+  * Updated master workflow files
+  * Use further-link for browser-opening command (#68)
+  * New changelog entry: v1.5.20210927-1 (#67)
+  * Fix icon
+  * Drop pimixer dependency
+  * Package rework (#70)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Tue, 02 Nov 2021 12:20:13 +0000
+
 pt-os-ui-mods (1.5.20210927-1) bullseye; urgency=medium
 
   * Use further-link for browser-opening command (#68)
