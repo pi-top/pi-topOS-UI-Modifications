@@ -1,13 +1,7 @@
 pt-os-ui-mods (1.5.20210927-3) bullseye; urgency=medium
 
-  * [pre-commit.ci] pre-commit autoupdate (#71)
-  * Updated master workflow files
-  * [pre-commit.ci] pre-commit autoupdate (#73)
-  * Add signing key and passphrase to deb_release workflow
   * Include PiXflat gtk theme (#75)
   * Use lxde-updater plugin (#76)
-  * Add pull request template
-  * Update PR template to track Github issues
 
  -- pi-top <deb-maintainers@pi-top.com>  Fri, 04 Feb 2022 12:10:29 +0000
 
