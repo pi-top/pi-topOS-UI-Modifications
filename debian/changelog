@@ -1,4 +1,4 @@
-pt-os-ui-mods (1.5.20210927-3) bullseye; urgency=medium
+pt-os-ui-mods (1.6.20220204) bullseye; urgency=medium
 
   * Include PiXflat gtk theme (#75)
   * Use lxde-updater plugin (#76)
