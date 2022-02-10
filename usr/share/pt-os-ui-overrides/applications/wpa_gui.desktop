@@ -9,4 +9,3 @@ GenericName=wpa_supplicant user interface
 Terminal=false
 Type=Application
 Categories=Settings;
-NoDisplay=true
