@@ -1,6 +1,5 @@
-pt-os-ui-mods (1.6.20220204-2) bullseye; urgency=medium
+pt-os-ui-mods (1.7.20220210-1) bullseye; urgency=medium
 
-  * [pre-commit.ci] pre-commit autoupdate (#78)
   * Display wpa_gui in the start menu (#77)
 
  -- pi-top <deb-maintainers@pi-top.com>  Thu, 10 Feb 2022 12:07:48 +0000
