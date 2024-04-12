@@ -1,3 +1,14 @@
+pt-os-ui-mods (1.8.20240412-1) bullseye; urgency=medium
+
+  * Updated master workflow files
+  * Updated master workflow files
+  * Updated master workflow files
+  * Updated master workflow files
+  * Updated master workflow files
+  * Package for bookworm (#83)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 12 Apr 2024 19:20:29 +0000
+
 pt-os-ui-mods (1.7.20220210-1) bullseye; urgency=medium
 
   * Display wpa_gui in the start menu (#77)
