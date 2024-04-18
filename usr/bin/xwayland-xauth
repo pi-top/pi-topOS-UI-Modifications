@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# start xsettingsd for the supplied display after Xwayland is running
+(sleep 1 && DISPLAY="$1" xsettingsd ) &
+
+# start Xwayland itself with the .Xauthority file
+exec /usr/bin/Xwayland -auth /home/$USER/.Xauthority "$@"
