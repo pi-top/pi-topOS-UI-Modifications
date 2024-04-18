@@ -19,8 +19,8 @@ Depends:
  adduser,
  notify-send-ng,
 # UI
- adapta-gtk-theme,
- breeze-cursor-theme,
+# adapta-gtk-theme,
+# breeze-cursor-theme,
  desktop-file-utils,
  fonts-piboto,
 # Further desktop file's 'start-further' command
