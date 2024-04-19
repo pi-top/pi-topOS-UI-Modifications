@@ -5,4 +5,3 @@ Exec=/usr/bin/wayfire-pt -c /usr/share/greeter.ini
 Type=Application
 X-Ubuntu-Gettext-Domain=lightdm
 X-LightDM-Session-Type=wayland
-

@@ -363,9 +363,9 @@ style "default"
 				expander_style		= SEMI_COLLAPSED
 				file				= "Expanders/plus.png"
 		}
-	
+
 		# Others
-	
+
 		image
 		{
 				function			= RESIZE_GRIP
@@ -822,7 +822,7 @@ style "handlebox"
 	}
 }
 
-style "separator_menu_item" 
+style "separator_menu_item"
 {
 	engine "pixmap"
 	{
@@ -1068,14 +1068,14 @@ style "panel_button" {
 	GtkButton::inner-border = {0,0,0,0}
 	GtkWidget::focus-padding = 0
 	GtkWidget::focus-line-width = 0
-	
+
 	bg[NORMAL]		  = shade (1.04, @bar_bg_color)
 	bg[ACTIVE]		  = shade (0.85, @bar_bg_color)
 	fg[NORMAL]		  = @bar_fg_color
 	fg[ACTIVE]		  = @bar_fg_color
 	bg[PRELIGHT]	  = @selected_bg_color
 	fg[PRELIGHT]	  = @selected_fg_color
-	
+
 	engine "clearlookspix" {}
 }
 
