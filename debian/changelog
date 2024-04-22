@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.8.20240412-2) bullseye; urgency=medium
+
+  * Setup desktop environment for bookworm (#84)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Mon, 22 Apr 2024 20:31:05 +0000
+
 pt-os-ui-mods (1.8.20240412-1) bullseye; urgency=medium
 
   * Updated master workflow files
