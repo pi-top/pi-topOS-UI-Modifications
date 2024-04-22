@@ -22,9 +22,6 @@ Depends:
 # postinst
  adduser,
  notify-send-ng,
-# UI
-# adapta-gtk-theme,
-# breeze-cursor-theme,
  desktop-file-utils,
  fonts-piboto,
 # Further desktop file's 'start-further' command
@@ -54,7 +51,6 @@ Depends:
  xsettingsd,
 Recommends:
  agnostics,
-# compton,
  cups,
  gnome-icon-theme,
  gtk2-engines-clearlookspix,
@@ -79,7 +75,6 @@ Recommends:
  scrot,
  system-config-printer,
  xserver-xorg-video-fbturbo,
-# from raspberrypi-ui-mods
  grim,
  lxinput,
  lxplug-menu,
