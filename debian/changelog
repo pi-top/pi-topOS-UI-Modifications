@@ -1,4 +1,4 @@
-pt-os-ui-mods (1.8.20240412-2) bullseye; urgency=medium
+pt-os-ui-mods (1.9.20240422-1) bullseye; urgency=medium
 
   * Setup desktop environment for bookworm (#84)
 
