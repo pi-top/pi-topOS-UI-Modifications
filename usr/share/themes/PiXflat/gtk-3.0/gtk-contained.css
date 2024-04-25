@@ -369,7 +369,7 @@ entry + entry:focus:not(:only-child) {
 entry + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical >
 entry + entry:drop(active):not(:only-child) {
-  border-top-color: @theme_selected_bg_color; }
+  border-top-color: #4e9a06; }
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + spinbutton:not(.vertical),
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + entry,
 .linked.vertical > spinbutton:focus:not(:only-child):not(.vertical) + button,
@@ -393,7 +393,7 @@ entry:drop(active):not(:only-child) + entry,
 entry:drop(active):not(:only-child) + button,
 .linked.vertical >
 entry:drop(active):not(:only-child) + combobox > box > button.combo {
-  border-top-color: @theme_selected_bg_color; }
+  border-top-color: #4e9a06; }
 
 treeview entry:focus:dir(rtl), treeview entry:focus:dir(ltr) {
   background-color: #ffffff;
@@ -575,9 +575,9 @@ button {
       padding-right: 8px; }
   combobox:drop(active) button.combo, notebook > header > tabs > arrow:drop(active), button.titlebutton:drop(active),
   button:drop(active) {
-    color: @theme_selected_bg_color;
-    border-color: @theme_selected_bg_color;
-    box-shadow: inset 0 0 0 1px @theme_selected_bg_color; }
+    color: #4e9a06;
+    border-color: #4e9a06;
+    box-shadow: inset 0 0 0 1px #4e9a06; }
 row:selected
 button {
   border-color: @theme_sel_bg_shaded; }
@@ -2012,8 +2012,8 @@ headerbar switch {
   margin-bottom: 9px; }
 
 .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar:backdrop, .background:not(.tiled):not(.maximized):not(.solid-csd) .titlebar {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px; }
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
 
 window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) separator:first-child + headerbar, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child:backdrop, window:not(.tiled):not(.maximized):not(.solid-csd) headerbar:first-child {
   border-top-left-radius: 3px; }
@@ -2023,8 +2023,8 @@ window:not(.tiled):not(.maximized):not(.solid-csd) stack headerbar:first-child:b
   border-top-left-radius: 7px;
   border-top-right-radius: 7px; }
 window {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
@@ -2226,7 +2226,6 @@ menubar,
 menu,
 .menu,
 .context-menu {
-  -GtkMenu-dynamic-resize : true;
   margin: 4px;
   padding: 0px 0px;
   background-color: #ffffff;
@@ -2652,10 +2651,6 @@ switch {
   color: #f4f4f4;
   background-color: #f4f4f4;
   border-color: #a0a0a0; }
-switch:focus {
-  outline-offset: 4px;
-  outline-color: alpha(#000000,0.3);
-}
   switch:checked {
     /*color: #30a030;*/
     color: @theme_selected_bg_color;
@@ -2664,12 +2659,12 @@ switch:focus {
   switch:disabled {
     color: #f4f4f4;
     background-color: #f4f4f4;
-    border-color: #d0d0d0; }
+    border-color: #e0e0e0; }
     switch:disabled:checked {
       /*color: #a0d0a0;*/
-      color: shade(@theme_selected_bg_color, 1.4);
-      background-color: shade(@theme_selected_bg_color, 1.4);
-      border-color: #b0b0b0; }
+      color: shade(@theme_selected_bg_color, 1.5);
+      background-color: shade(@theme_selected_bg_color, 1.5);
+      border-color: #c0c0c0; }
   switch:backdrop {
     color: #f4f4f4;
     background-color: #f4f4f4;
@@ -2682,48 +2677,48 @@ switch:focus {
     switch:backdrop:disabled {
       color: #f1f1f1;
       background-color: #f1f1f1;
-      border-color: #e0e0e0; }
+      border-color: #e8e8e8; }
       switch:backdrop:disabled:checked {
         color: shade(@theme_selected_bg_color, 1.6);
         background-color: shade(@theme_selected_bg_color, 1.6);
         border-color: #d0d0d0; }
   switch slider {
     margin: 1px;
-    min-width: 18px;
+    min-width: 22px;
     min-height: 18px;
     border: 1px solid;
     border-radius: 15px;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-color: #a0a0a0;
+    border-color: #c0c0c0;
     background-image: image(#dedede); }
   switch:checked slider {
     border-color: #707070;
     background-image: image(#dedede); }
   switch:hover slider {
-    border-color: #a0a0a0;
+    border-color: #b0b0b0;
     background-image: image(#cfcfcf); }
   switch:hover:checked slider {
     border-color: #707070;
     background-image: image(#cfcfcf); }
   switch:disabled slider {
-    border-color: #d0d0d0;
+    border-color: #e0e0e0;
     background-image: image(#f1f1f1);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
   switch:disabled:checked slider {
-    border-color: #b0b0b0;
+    border-color: #c0c0c0;
     background-image: image(#f1f1f1); }
     switch:disabled slider label, switch:disabled slider {
       color: #8b8e8f; }
   switch:backdrop slider {
     transition: 200ms ease-out;
-    border-color: #c8c8c8;
+    border-color: #d0d0d0;
     background-image: image(#f1f1f1); }
     switch:backdrop slider label {
       color: #8b8e8f; }
   switch:backdrop:checked slider {
-    border-color: #b0b0b0;
+    border-color: #d0d0d0;
     background-image: image(#f1f1f1); }
   switch:backdrop:disabled slider {
     border-color: #e0e0e0;
@@ -2814,7 +2809,7 @@ radio {
   check:disabled,
   radio:disabled {
     border-color: #b6b6b3;
-    background-color: #f1f1f1;
+    background-image: image(#f1f1f1);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -2825,7 +2820,7 @@ radio {
   check:backdrop,
   radio:backdrop {
     border-color: #c0c0bd;
-    background-color: #ededed;
+    background-image: image(#ededed);
     text-shadow: none;
     -gtk-icon-shadow: none;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
@@ -3082,7 +3077,7 @@ scale {
       background-color: #cfcfcf; }
     scale slider:disabled {
       border-color: #b6b6b3;
-      background-color: #f1f1f1;
+      background-image: image(#f1f1f1);
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -3091,7 +3086,7 @@ scale {
     scale slider:backdrop {
       transition: 200ms ease-out;
       border-color: #c0c0bd;
-      background-color: #ededed;
+      background-image: image(#ededed);
       text-shadow: none;
       -gtk-icon-shadow: none;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -3099,7 +3094,7 @@ scale {
         color: #8b8e8f; }
       scale slider:backdrop:disabled {
         border-color: #c0c0bd;
-        background-color: #f1f1f1;
+        background-image: image(#f1f1f1);
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0); }
@@ -3590,7 +3585,7 @@ expander arrow {
  ***********/
 calendar {
   color: black;
-  border: none; }
+  border: 1px solid #b6b6b3; }
   calendar:selected {
     border-radius: 3px; }
   calendar.header {
@@ -3618,9 +3613,29 @@ calendar {
 /***********
  * Dialogs *
  ***********/
-dialog buttonbox, messagedialog buttonbox {
-  padding: 5px 5px;
-}
+messagedialog .titlebar {
+  min-height: 20px;
+  background-image: none;
+  background-color: #ededed;
+  border-style: none;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; }
+messagedialog.csd.background {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px; }
+messagedialog.csd .dialog-action-area button {
+  padding: 10px 14px;
+  border-radius: 0;
+  border-left-style: solid;
+  border-right-style: none;
+  border-bottom-style: none; }
+  messagedialog.csd .dialog-action-area button:first-child {
+    border-left-style: none;
+    border-bottom-left-radius: 7px;
+    -gtk-outline-bottom-left-radius: 5px; }
+  messagedialog.csd .dialog-action-area button:last-child {
+    border-bottom-right-radius: 7px;
+    -gtk-outline-bottom-right-radius: 5px; }
 
 filechooser .dialog-action-box {
   border-top: 1px solid #b6b6b3; }
@@ -3709,16 +3724,16 @@ placessidebar row {
   placessidebar row.sidebar-placeholder-row {
     padding: 0 8px;
     min-height: 2px;
-    background-image: image(@theme_selected_bg_color);
+    background-image: image(#4e9a06);
     background-clip: content-box; }
   placessidebar row.sidebar-new-bookmark-row {
     color: @theme_selected_bg_color; }
   placessidebar row:drop(active):not(:disabled) {
-    color: @theme_selected_bg_color;
-    box-shadow: inset 0 1px @theme_selected_bg_color, inset 0 -1px @theme_selected_bg_color; }
+    color: #4e9a06;
+    box-shadow: inset 0 1px #4e9a06, inset 0 -1px #4e9a06; }
     placessidebar row:drop(active):not(:disabled):selected {
       color: #ffffff;
-      background-color: @theme_selected_bg_color; }
+      background-color: #4e9a06; }
 
 placesview .server-list-button > image {
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -3918,11 +3933,11 @@ colorswatch.light overlay {
 colorswatch:drop(active) {
   box-shadow: none; }
   colorswatch:drop(active).light overlay {
-    border-color: @theme_selected_bg_color;
-    box-shadow: inset 0 0 0 2px #3d7805, inset 0 0 0 1px @theme_selected_bg_color; }
+    border-color: #4e9a06;
+    box-shadow: inset 0 0 0 2px #3d7805, inset 0 0 0 1px #4e9a06; }
   colorswatch:drop(active).dark overlay {
-    border-color: @theme_selected_bg_color;
-    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 0 1px @theme_selected_bg_color; }
+    border-color: #4e9a06;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3), inset 0 0 0 1px #4e9a06; }
 colorswatch overlay {
   border: 1px solid rgba(0, 0, 0, 0.3); }
   colorswatch overlay:hover {
@@ -3996,12 +4011,12 @@ colorchooser .popover.osd {
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 0px;
+  border-radius: 3px;
   border-width: 0px;
-  box-shadow: none;
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
   margin: 10px; }
   decoration:backdrop {
-    box-shadow: none;
+    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.18);
     transition: 200ms ease-out; }
   .maximized decoration, .fullscreen decoration, .tiled decoration {
     border-radius: 0; }
@@ -4011,6 +4026,9 @@ decoration {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23); }
   .csd.popup decoration {
     border-radius: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
+  messagedialog.csd decoration {
+    border-radius: 7px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
   .solid-csd decoration {
     margin: 0;
@@ -4022,66 +4040,24 @@ decoration {
     .solid-csd decoration:backdrop {
       box-shadow: inset 0 0 0 3px #ededed, inset 0 1px rgba(255, 255, 255, 0.8); }
 
-button.titlebutton, button.titlebutton:hover {
+button.titlebutton {
   color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
   border: none;
   -gtk-icon-shadow: none;
   -gtk-icon-effect: none;}
-button.titlebutton:disabled {
-  color: shade(@theme_selected_fg_color, 0.4);
+button.titlebutton:hover, button.titlebutton:active {
+  color: @theme_selected_fg_color;
   background-color: @theme_selected_bg_color;
   border: none;
   -gtk-icon-shadow: none;
-  -gtk-icon-effect: none;}
+  -gtk-icon-effect: none; }
 button.titlebutton:backdrop, button.titlebutton:backdrop:hover {
   color: #8b8e8f;
   background-color: #ededed;
   border: none;
   -gtk-icon-shadow: none;
-  -gtk-icon-effect: none;}
-button.titlebutton:backdrop:disabled {
-  color: #c0c0c0;
-  background-color: #ededed;
-  border: none;
-  -gtk-icon-shadow: none;
-  -gtk-icon-effect: none;}
-
-button.close.titlebutton image, button.close.titlebutton:disabled image, button.close.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-close.symbolic.png")); }
-button.close.titlebutton:hover image, button.close.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-close-hover.symbolic.png")); }
-button.close.titlebutton.largeicons image, button.close.titlebutton.largeicons:disabled image, button.close.titlebutton.largeicons:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-close-large.symbolic.png")); }
-button.close.titlebutton.largeicons:hover image, button.close.titlebutton.largeicons:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-close-hover-large.symbolic.png")); }
-
-button.minimize.titlebutton image, button.minimize.titlebutton:disabled image, button.minimize.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-minimize.symbolic.png")); }
-button.minimize.titlebutton:hover image, button.minimize.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-minimize-hover.symbolic.png")); }
-button.minimize.titlebutton.largeicons image, button.minimize.titlebutton.largeicons:disabled image, button.minimize.titlebutton.largeicons:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-minimize-large.symbolic.png")); }
-button.minimize.titlebutton.largeicons:hover image, button.minimize.titlebutton.largeicons:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-minimize-hover-large.symbolic.png")); }
-
-button.maximize.titlebutton image, button.maximize.titlebutton:disabled image, button.maximize.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-maximize.symbolic.png")); }
-button.maximize.titlebutton:hover image, button.maximize.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-maximize-hover.symbolic.png")); }
-button.maximize.titlebutton.largeicons image, button.maximize.titlebutton.largeicons:disabled image, button.maximize.titlebutton.largeicons:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-maximize-large.symbolic.png")); }
-button.maximize.titlebutton.largeicons:hover image, button.maximize.titlebutton.largeicons:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-maximize-hover-large.symbolic.png")); }
-
-button.restore.titlebutton image, button.restore.titlebutton:disabled image, button.restore.titlebutton:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-restore.symbolic.png")); }
-button.restore.titlebutton:hover image, button.restore.titlebutton:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-restore-hover.symbolic.png")); }
-button.restore.titlebutton.largeicons image, button.restore.titlebutton.largeicons:disabled image, button.restore.titlebutton.largeicons:backdrop image {
-  background-image: -gtk-recolor(url("assets/window-restore-large.symbolic.png")); }
-button.restore.titlebutton.largeicons:hover image, button.restore.titlebutton.largeicons:backdrop:hover image {
-  background-image: -gtk-recolor(url("assets/window-restore-hover-large.symbolic.png")); }
+  -gtk-icon-effect: none; }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
@@ -4204,9 +4180,9 @@ cursor-handle {
 
 :not(decoration):not(window):drop(active):focus,
 :not(decoration):not(window):drop(active) {
-  border-color: @theme_selected_bg_color;
-  box-shadow: inset 0 0 0 1px @theme_selected_bg_color;
-  caret-color: @theme_selected_bg_color; }
+  border-color: #4e9a06;
+  box-shadow: inset 0 0 0 1px #4e9a06;
+  caret-color: #4e9a06; }
 
 stackswitcher button.text-button {
   min-width: 100px; }
@@ -4256,7 +4232,7 @@ headerbar button:disabled {
   border-bottom-right-radius: 0;
 }
 #PanelToplevel button {
-  padding: 2px 3px;
+  padding: 0px 3px;
   background-image: none;
   border: 0px;
 }
@@ -4312,9 +4288,6 @@ headerbar button:disabled {
   color: black;
   background-color: @theme_base_color;
   border : 0px;
-  padding : 0px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -4324,16 +4297,6 @@ headerbar button:disabled {
   border-color: #bfbfbf;
   background-color: #ffffff;
 }
-#panelpopup scale slider {
-  border-color: #c7c7c7;
-  background-color: #dedede;
-  border: 1px solid #c7c7c7; }
-#panelpopup scale slider:hover, #panelpopup scale slider:active {
-  border-color: #bfbfbf;
-  background-color: #cfcfcf; }
-#panelpopup scale slider:disabled {
-  border-color: #b6b6b3;
-  background-color: #f1f1f1; }
 #panelmenuitem label, #panelmenu menuitem label {
   padding-right: 20px;
 }

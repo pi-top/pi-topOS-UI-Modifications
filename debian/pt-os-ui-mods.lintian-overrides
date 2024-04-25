@@ -1,13 +1,4 @@
-pt-os-ui-mods: no-manual-page [usr/bin/colour_to_gtk3]
-pt-os-ui-mods: no-manual-page [usr/bin/colour_to_obconf]
-pt-os-ui-mods: no-manual-page [usr/bin/create_xauth]
-pt-os-ui-mods: no-manual-page [usr/bin/setup_env]
-pt-os-ui-mods: no-manual-page [usr/bin/wayfire-pt]
-pt-os-ui-mods: no-manual-page [usr/bin/wfrespawn]
-pt-os-ui-mods: no-manual-page [usr/bin/xfallback.sh]
-pt-os-ui-mods: no-manual-page [usr/bin/xwayland-xauth]
 pt-os-ui-mods: no-manual-page [usr/bin/openbox-lxde-pt]
 pt-os-ui-mods: no-manual-page [usr/bin/pt-scrot]
 pt-os-ui-mods: no-manual-page [usr/bin/startlxde-pt]
 pt-os-ui-mods: depends-on-obsolete-package Depends: policykit-1 => polkitd and optionally pkexec
-pt-os-ui-mods: script-with-language-extension [usr/bin/xfallback.sh]

@@ -11,10 +11,6 @@ Package: pt-os-ui-mods
 Architecture: all
 Conflicts:
  raspberrypi-ui-mods,
-Breaks:
- pixflat-theme,
-Replaces:
- pixflat-theme,
 Depends:
  ${misc:Depends},
  ${python3:Depends},
@@ -22,6 +18,9 @@ Depends:
 # postinst
  adduser,
  notify-send-ng,
+# UI
+ adapta-gtk-theme,
+ breeze-cursor-theme,
  desktop-file-utils,
  fonts-piboto,
 # Further desktop file's 'start-further' command
@@ -41,16 +40,10 @@ Depends:
  raspberrypi-sys-mods,
  x11-xserver-utils,
  xserver-xorg,
- zenity,
-# from raspberrypi-ui-mods
- xdg-user-dirs,
- wayfire,
- wf-panel-pi,
- qtwayland5,
- mate-polkit-bin,
- xsettingsd,
+ zenity
 Recommends:
  agnostics,
+ compton,
  cups,
  gnome-icon-theme,
  gtk2-engines-clearlookspix,
@@ -75,16 +68,6 @@ Recommends:
  scrot,
  system-config-printer,
  xserver-xorg-video-fbturbo,
- grim,
- lxinput,
- lxplug-menu,
- lxplug-netman,
- pipanel,
- pixflat-icons,
- qt5-style-plugins,
- qt5ct,
- wayvnc,
- xwayland,
 Description: pi-topOS LXDE UI Customisations
  Customised theme and configuration for LXDE desktop on Raspberry Pi. Inherited
  from raspberrypi-ui-mods, this package uses 'LXDE-pt' instead of 'LXDE-pi'

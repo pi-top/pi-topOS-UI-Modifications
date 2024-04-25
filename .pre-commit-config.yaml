@@ -2,7 +2,7 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v4.1.0
     hooks:
     - id: trailing-whitespace
     - id: end-of-file-fixer
@@ -13,18 +13,18 @@ repos:
       exclude: ^etc/xdg/autorandr/default
 
 -   repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+    rev: v0.8.0.4
     hooks:
     - id: shellcheck
       args: [-x]
 
--   repo: https://github.com/pecigonzalo/pre-commit-shfmt
-    rev: v2.2.0
+-   repo: git://github.com/pecigonzalo/pre-commit-shfmt
+    rev: 23bcc6bbfd38358ca99fb1787af2f8202b9dd46a
     hooks:
     -  id: shell-fmt
        args: ["--indent=4"]
 
--   repo: https://github.com/hhatto/autopep8
-    rev: v2.1.0
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v1.6.0
     hooks:
     -   id: autopep8
