@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.9.20240422-2) bullseye; urgency=medium
+
+  * Re-package for bullseye
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 26 Apr 2024 09:39:59 -0400
+
 pt-os-ui-mods (1.9.20240422-1) bullseye; urgency=medium
 
   * Setup desktop environment for bookworm (#84)
