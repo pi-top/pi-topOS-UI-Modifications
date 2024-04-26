@@ -5,6 +5,7 @@ on:
   pull_request:
     branches:
       - master
+      - bullseye
     types: [closed]
 
 
@@ -163,12 +164,14 @@ jobs:
         # Only 1 .dsc is required for source so take armhf if there's multiple
         if: |
           (
-            github.ref == 'refs/heads/master' &&
+            (
+              github.ref == 'refs/heads/master' ||
+              github.ref == 'refs/heads/bullseye'
+            ) &&
             (
               matrix.architecture == 'amd64' ||
               matrix.architecture == 'armhf'
             )
-
           )
         with:
           repository: ${{ env.PACKAGECLOUD_REPO }}/${{ env.OS }}/${{ matrix.distro }}
