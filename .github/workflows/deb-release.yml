@@ -199,9 +199,9 @@ jobs:
           release_tag="v${{ needs.check-versions.outputs.CURRENT_VERSION }}"
           matrix="${{needs.set-build-matrix.outputs.matrix}}"
 
-          # if releasing ONLY for bullseye, append 'bullseye' to release tag
+          # if releasing ONLY for bullseye, prepend 'bullseye' to release tag
           if [ ${{ matrix.distro }} = 'bullseye' ] && echo "${matrix}" | grep -qv 'bookworm'; then
-            release_tag="$release_tag-bullseye"
+            release_tag="bullseye-$release_tag"
           fi
 
           echo "RELEASE_TAG=${release_tag}" >> $GITHUB_ENV
