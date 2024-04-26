@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - bullseye
   workflow_dispatch:
 
 env:
@@ -159,7 +160,10 @@ jobs:
         # Only 1 .dsc is required for source so take armhf if there's multiple
         if: |
           (
-            github.ref == 'refs/heads/master' &&
+            (
+              github.ref == 'refs/heads/master' ||
+              github.ref == 'refs/heads/bullseye'
+            ) &&
             (
               matrix.architecture == 'amd64' ||
               matrix.architecture == 'armhf'
@@ -174,7 +178,7 @@ jobs:
 
       - name: Upload .deb to PackageCloud
         uses: pi-top/ghaction-packagecloud@main
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/bullseye'
         with:
           repository: ${{ env.PACKAGECLOUD_REPO }}/${{ env.OS }}/${{ matrix.distro }}
           files: |
