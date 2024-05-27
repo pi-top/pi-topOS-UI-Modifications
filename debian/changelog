@@ -1,3 +1,10 @@
+pt-os-ui-mods (1.9.20240422-3) bullseye; urgency=medium
+
+  * Update workflows
+  * Include lightdm service drop-in in deb
+
+ -- pi-top <deb-maintainers@pi-top.com>  Mon, 27 May 2024 22:18:48 +0000
+
 pt-os-ui-mods (1.9.20240422-2) bullseye; urgency=medium
 
   * Update build & release workflows (#86)
