@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.9.20240422-4) bullseye; urgency=medium
+
+  * Run drop-in commands from a string
+
+ -- pi-top <deb-maintainers@pi-top.com>  Mon, 27 May 2024 22:38:31 +0000
+
 pt-os-ui-mods (1.9.20240422-3) bullseye; urgency=medium
 
   * Update workflows
