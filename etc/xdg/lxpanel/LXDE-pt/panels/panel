@@ -144,6 +144,11 @@ Plugin {
   }
 }
 Plugin {
+  type=netman
+  Config {
+  }
+}
+Plugin {
   type=space
   Config {
     Size=2
