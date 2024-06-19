@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.9.20240422-6) bullseye; urgency=medium
+
+  * Remove desktop files from removed apps
+
+ -- pi-top <deb-maintainers@pi-top.com>  Wed, 19 Jun 2024 21:07:11 +0000
+
 pt-os-ui-mods (1.9.20240422-5) bullseye; urgency=medium
 
   * Add NetworkManager plugin to start bar panel
