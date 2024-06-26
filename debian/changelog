@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.9.20240422-3) bullseye; urgency=medium
+
+  * Remove desktop files from removed apps
+
+ -- pi-top <deb-maintainers@pi-top.com>  Wed, 26 Jun 2024 09:15:42 -0400
+
 pt-os-ui-mods (1.9.20240422-2) bullseye; urgency=medium
 
   * Re-package for bullseye
