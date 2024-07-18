@@ -1,3 +1,9 @@
+pt-os-ui-mods (1.9.20240422-7) bullseye; urgency=medium
+
+  * Set virtual display resolution on boot (#92)
+
+ -- pi-top <deb-maintainers@pi-top.com>  Thu, 18 Jul 2024 17:20:45 +0000
+
 pt-os-ui-mods (1.9.20240422-6) bullseye; urgency=medium
 
   * Remove desktop files from removed apps
