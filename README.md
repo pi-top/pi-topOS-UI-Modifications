@@ -6,7 +6,6 @@ Notable additional changes:
 * Change to `LXDE-pt` session name
 * VNC config (`/etc/vnc/config.d/common.custom`):
   * Disable tray icon
-  * Add virtual 1920x1080 resolution for VNC
 * Auto-start resolution handling
   * `autorandr` dependency includes auto-start of default profile
   * `/etc/xdg/autorandr/default`

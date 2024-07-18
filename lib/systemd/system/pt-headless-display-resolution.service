@@ -1,0 +1,11 @@
+[Unit]
+Description=pi-top Headless Display Resolution
+Documentation=https://knowledgebase.pi-top.com/knowledge
+Requires=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pt-headless-display-resolution :0.0 1920x1080
+
+[Install]
+WantedBy=multi-user.target

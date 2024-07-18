@@ -1,0 +1,41 @@
+#!/bin/bash
+
+wait_for() {
+    local command="$1"
+    local COUNTER=1
+    local MAX_ATTEMPTS=30
+
+    echo "Waiting for '${command}'..."
+    until eval "${command}" &> /dev/null
+    do
+        echo .
+        sleep 1
+        COUNTER=$((COUNTER + 1))
+        if [ $COUNTER -gt $MAX_ATTEMPTS ]; then
+            echo "Command '${command}' failed after $MAX_ATTEMPTS seconds, exiting"
+            exit 1
+        fi
+    done
+    echo "Command '${command}' succeeded after $COUNTER seconds"
+}
+
+display_connected() {
+    xrandr --display "${1}" | grep -q -w connected
+}
+
+main() {
+    local display="${1:-:0.0}"
+    local resolution="${2:-1920x1080}"
+
+    wait_for "xrandr --display $display"
+
+    if display_connected "${display}"; then
+        echo "Display detected, not setting resolution..."
+        exit 0
+    fi
+
+    echo "Setting virtual display resolution to ${resolution}..."
+    /usr/bin/xrandr --display "${display}" --fb "${resolution}"
+}
+
+main "$@"
