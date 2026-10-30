@@ -1,3 +1,13 @@
+pt-os-ui-mods (1.9.20240422-8) bullseye; urgency=medium
+
+  * Updated master workflow files
+  * Updated master workflow files
+  * Updated master workflow files
+  * Updated master workflow files
+  * Regenerate Debian workflows: drop bullseye, move off the dead runner
+
+ -- pi-top <deb-maintainers@pi-top.com>  Fri, 30 Oct 2026 16:24:05 +0000
+
 pt-os-ui-mods (1.9.20240422-7) bullseye; urgency=medium
 
   * Set virtual display resolution on boot (#92)
