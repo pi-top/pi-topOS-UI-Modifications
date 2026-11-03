@@ -4,4 +4,4 @@
 (sleep 1 && DISPLAY="$1" xsettingsd ) &
 
 # start Xwayland itself with the .Xauthority file
-exec /usr/bin/Xwayland -auth /home/$USER/.Xauthority "$@"
+exec /usr/bin/Xwayland -auth "/home/$USER/.Xauthority" "$@"

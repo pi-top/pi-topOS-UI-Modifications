@@ -5,6 +5,8 @@ GTKCONF=${1}.config/gtk-3.0/gtk.css
 if [ -e "$LXCONF" ] ; then
     COLSCHEME=$(grep ColorScheme "$LXCONF")
 
+    # desktop.conf separates the colours with a literal \n, so split on the backslash
+    # shellcheck disable=SC2141
     IFS="\\"
     for COLOR in $COLSCHEME
     do

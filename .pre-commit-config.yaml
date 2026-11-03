@@ -18,12 +18,6 @@ repos:
     - id: shellcheck
       args: [-x]
 
--   repo: https://github.com/pecigonzalo/pre-commit-shfmt
-    rev: v2.2.0
-    hooks:
-    -  id: shell-fmt
-       args: ["--indent=4"]
-
 -   repo: https://github.com/hhatto/autopep8
     rev: v2.1.0
     hooks:
