@@ -1,4 +1,4 @@
 #!/bin/sh
 rm -f ~/.Xauthority
 touch ~/.Xauthority
-xauth add ${HOST}"$DISPLAY" . $(openssl rand -hex 16)
+xauth add "${HOST}${DISPLAY}" . "$(openssl rand -hex 16)"

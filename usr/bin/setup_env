@@ -5,6 +5,7 @@ export XDG_MENU_PREFIX="lxde-pt-"
 
 # Ensure the existence of the 'Desktop' folder
 if [ -e "$HOME/.config/user-dirs.dirs" ]; then
+  # shellcheck source=/dev/null
   . "$HOME/.config/user-dirs.dirs"
 else
   XDG_DESKTOP_DIR="$HOME/Desktop"
