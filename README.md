@@ -27,7 +27,7 @@ Notable additional changes:
   * `/etc/xdg/openbox/lxde-pt-rc.xml`
     * Specifies key binding to 'Print Screen' button
   * `/usr/bin/pt-scrot`
-    * `scrot` or `raspi2png`, depending on display driver
+    * `scrot`
 * Adapta theme for notification appearance (`/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml`)
 * Custom wallpapers (`/usr/share/backgrounds/pi-top/{pink,teal,yellow}.png`)
 * Additional start menu entries (`/usr/share/pt-os-ui-overrides`)
