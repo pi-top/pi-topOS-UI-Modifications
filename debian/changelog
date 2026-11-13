@@ -1,4 +1,4 @@
-pt-os-ui-mods (1.9.20240423-1) bookworm; urgency=medium
+pt-os-ui-mods (1.10.0-1) bookworm; urgency=medium
 
   * Allow running the changelog bump by hand
 
